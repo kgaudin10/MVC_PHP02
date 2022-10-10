@@ -28,7 +28,7 @@ public function _construct($m=NULL,$c=NULL,$i=NULL){
         $this->immatriculation = $i;
        
 }}
-
+//Getteurs et setters
 public function getCouleur(){
     return $this->couleur;
 }
@@ -50,7 +50,6 @@ public function setImmat($immatriculation2)
 {
    if ($immatriculation2 =<8) {$this->immatriculation = $immatriculation2;}
 }
-
 function getVoitureByImmat($immat) {
     $sql = "SELECT * from voiture WHERE immatriculation=:nom_tag";
     // Préparation de la requête
