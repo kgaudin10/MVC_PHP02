@@ -10,9 +10,6 @@ class Conf {
  // A l'IUT, c'est votre login
  // Sur votre machine, vous avez surement un compte 'root'
  'login' => 'root',
- // A l'IUT, c'est votre mdp (INE par defaut)
- // Sur votre machine personelle, vous avez creez ce mdp a l'installation
- 'password' => ''
  );
  
  static public function getLogin() {
@@ -26,10 +23,6 @@ class Conf {
   static public function getDatabase() {
  //en PHP l'indice d'un tableau n'est pas forcement un chiffre.
  return self::$databases['database'];
- }
-  static public function getPassword() {
- //en PHP l'indice d'un tableau n'est pas forcement un chiffre.
- return self::$databases['password'];
  }
  static private $debug = True; 
  

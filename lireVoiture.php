@@ -1,7 +1,7 @@
 <?php
 require_once 'Model.php';
 require_once 'voiture.php';
-
+//Requete SQL
 $rep = Model::$PDO->query('SELECT * FROM voiture');
 $tab_obj = $rep->fetchAll(PDO::FETCH_OBJ)
 

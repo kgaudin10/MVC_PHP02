@@ -10,6 +10,6 @@
         trajet::findPassager($id);
     }
     else{
-        echo"le formulaire n'a pas été rempli correctement."
+        echo"le formulaire n'est pas rempli correctement."
     }
 ?>
